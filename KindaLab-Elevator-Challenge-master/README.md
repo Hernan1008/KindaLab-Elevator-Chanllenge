@@ -3,9 +3,10 @@
 - 
 ****
 
-La aplicación inicia, se le pide al usuario su peso y el peso de lo que transporte.
-Inicia un menú de opciones numéricas que nos van a permitir elegir varias opciones. Podemos llamar, subir y dejar dos ascensores (uno público y otro de carga),
-también podemos buscar y dejar la llave de acceso, cambiar el peso de lo que transportamos, nuestro propio peso y salir del edificio (finalizando la aplicación).
+La aplicación inicia y se le pide al usuario su peso y el peso de lo que transporte.
+Inicia un menú de opciones numéricas que nos van a permitir elegir varias opciones. 
+Podemos llamar, subir y dejar dos ascensores (uno público y otro de carga), también podemos buscar y dejar la llave de acceso, cambiar el peso de lo que transportamos, 
+nuestro propio peso y salir del edificio (finalizando la aplicación).
 
 Los ascensores solo pueden ser accedidos si su piso coincide con el piso del usuario y si no se excede su límite.
 
@@ -22,8 +23,8 @@ Las operaciones son:
 8. Dejar la llave de acceso
 9. Seleccionar el peso de lo que transportamos
 10. Cambiar nuestro peso
-
-~~100. Muestra los datos del usuario y de ambos ascensores, pero es un código secreto~~
+-
+100. Muestra los datos del usuario y de ambos ascensores, pero es un código secreto
 
 
 
@@ -88,13 +89,13 @@ Tiene los atributos:
 Tiene constructor vacío, completo y solo con actualFloor iniciado. Tiene getters y setters de todos sus elementos.
 ***
 # Funcionalidad avanzada
-Los ascensores deben ser llamados y al ser usados no se debe exceder su límite de carga, no se deben seleccionar pisos inexistentes ni se puede acceder a pisos no autorizados sin la llave de acceso.
+Los ascensores deben ser llamados y al ser usados no se debe exceder su límite de carga, no se pueden seleccionar pisos inexistentes ni se puede acceder a pisos no autorizados sin la llave de acceso.
 
 Cuando el usuario usa un ascensor, este ascensor carga el peso del usuario sumado al peso de lo que esté transformando, si su peso total es mayor al límite, el ascensor no cambiará su posición y no llevará al usuario.
 
 Cuando el usuario usa un ascensor y cumple todas las condiciones, el ascensor cambia su peso a la suma del peso del usuario más el peso de lo que transporte el usuario y tanto el ascensor como el usuario cambian su posición al piso seleccionado.
 
-La aplicacion tiene un servicio de validaciones que permiten crear y verificar si se incumplen/cumplen las condiciones que se proponen.
+La aplicacion cuenta con un servicio de validaciones que permiten crear y verificar si se incumplen/cumplen las condiciones que se proponen.
 
 
 
